@@ -33,18 +33,60 @@ $.extend(frappe.desktop, {
 
 		var all_icons = frappe.get_desktop_icons();
 		var explore_icon = {
-			module_name: 'Explore',
-			label: 'Explore',
-			_label: __('Explore'),
-			_id: 'Explore',
+			module_name: 'Stock',
+			label: 'QTY Adjust',
+			_label: __('QTY Adjust'),
+			_id: 'QTY Adjust',
 			_doctype: '',
 			icon: 'octicon octicon-telescope',
 			color: '#7578f6',
-			link: 'modules'
+			link: 'qty-adjust'
 		};
 		explore_icon.app_icon = frappe.ui.app_icon.get_html(explore_icon);
 		all_icons.push(explore_icon);
+		// BB Icon
+		var bbq_icon = {
+			module_name: 'Stock',
+			label: 'Price List',
+			_label: __('Price List'),
+			_id: 'Price List',
+			_doctype: '',
+			icon: 'octicon octicon-graph',
+			color: '#7578f6',
+			link: 'price-list-sheet'
+		};
+		bbq_icon.app_icon = frappe.ui.app_icon.get_html(bbq_icon);
+		all_icons.push(bbq_icon);
 
+		// BB Icon
+		var bbq_icon = {
+			module_name: 'Selling',
+			label: 'Sales Routing',
+			_label: __('Sales Routing'),
+			_id: 'Sales Routing',
+			_doctype: '',
+			icon: 'octicon octicon-location',
+			color: '#7578f6',
+			link: '/sales_order'
+		};
+		bbq_icon.app_icon = frappe.ui.app_icon.get_html(bbq_icon);
+		all_icons.push(bbq_icon);
+		
+		// BB Icon
+		var bbq_icon = {
+			module_name: 'Stock',
+			label: 'Stock Summary',
+			_label: __('Stock Summary'),
+			_id: 'Stock Summary',
+			_doctype: '',
+			icon: 'octicon octicon-settings',
+			color: '#9beb28',
+			link: 'stock-balance'
+		};
+		bbq_icon.app_icon = frappe.ui.app_icon.get_html(bbq_icon);
+		all_icons.push(bbq_icon);
+		
+			// BB Icon
 		frappe.desktop.wrapper.html(frappe.render_template(template, {
 			// all visible icons
 			desktop_items: all_icons,

@@ -1,4 +1,5 @@
 {
+ "_seen": "[\"vkb@sundinepro.com\"]", 
  "allow_copy": 0, 
  "allow_guest_to_view": 0, 
  "allow_import": 0, 
@@ -1807,8 +1808,8 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2017-05-03 16:15:40.198072", 
- "modified_by": "makarand@erpnext.com", 
+ "modified": "2018-11-13 14:14:24.780880", 
+ "modified_by": "vkb@sundinepro.com", 
  "module": "Core", 
  "name": "DocType", 
  "owner": "Administrator", 

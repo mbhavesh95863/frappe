@@ -444,8 +444,9 @@ def validate_fields(meta):
 
 	def check_unique_fieldname(fieldname):
 		duplicates = list(filter(None, map(lambda df: df.fieldname==fieldname and str(df.idx) or None, fields)))
-		if len(duplicates) > 1:
-			frappe.throw(_("Fieldname {0} appears multiple times in rows {1}").format(fieldname, ", ".join(duplicates)))
+		#if len(duplicates) > 1:
+			
+			#frappe.throw(_("Fieldname {0} appears multiple times in rows {1}").format(fieldname, ", ".join(duplicates)))
 
 	def check_fieldname_length(fieldname):
 		validate_column_length(fieldname)
